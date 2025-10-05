@@ -1,4 +1,3 @@
-script.js
 /* Digital Clock + To-Do List */
 
 /* Digital Clock + To-Do List with Real-Time Features */
@@ -110,3 +109,4 @@ clearCompletedBtn.onclick=()=>{tasks=tasks.filter(t=>!t.completed);saveTasks();r
 addBtn.onclick=()=>addTask(input.value);
 input.onkeydown=e=>{if(e.key==='Enter')addTask(input.value);};
 loadTasks();render();
+
