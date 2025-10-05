@@ -1,0 +1,55 @@
+<index class="html">
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Clock & To-Do List (Real-Time + Weather)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <section class="clock-pane">
+      <div class="clock">
+        <div class="time" id="time">00:00:00</div>
+        <div class="ampm" id="ampm">AM</div>
+        <div class="date" id="date">Loading date...</div>
+        <div class="greeting" id="greeting">Good Day 🌞</div>
+        <div class="weather" id="weather">Fetching weather...</div>
+      </div>
+
+      <div class="clock-controls">
+        <button class="btn" id="toggleFormat">24-hour</button>
+        <button class="btn secondary" id="toggleSeconds">Hide seconds</button>
+        <button class="btn secondary" id="syncNow">Sync</button>
+      </div>
+    </section>
+
+    <section class="todo-pane">
+      <div class="header-row">
+        <h1>Daily Tasks</h1>
+        <div class="controls">
+          <button class="btn small" id="clearAll">Clear All</button>
+          <button class="btn small" id="clearCompleted">Clear Completed</button>
+        </div>
+      </div>
+
+      <div class="add-row">
+        <input id="taskInput" class="input" placeholder="Add a new task (press Enter)" />
+        <button class="btn" id="addBtn">Add</button>
+      </div>
+
+      <div class="list" id="taskList"></div>
+
+      <div class="footer">
+        <div><span class="badge" id="remaining">0</span> tasks remaining</div>
+        <div class="sub" id="lastSaved">—</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</index>
