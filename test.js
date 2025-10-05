@@ -40,7 +40,7 @@ toggleSecondsBtn.onclick=()=>{showSeconds=!showSeconds;toggleSecondsBtn.textCont
 syncNowBtn.onclick=updateClock;
 
 // Weather API
-const API_KEY = "YOUR_API_KEY"; // 👈 Replace with your OpenWeatherMap API key
+const API_KEY = e4a9a30d8aacfd8e4bd6e170013c6fb4; // 👈 Replace with your OpenWeatherMap API key
 
 async function fetchWeather(lat, lon){
   try{
