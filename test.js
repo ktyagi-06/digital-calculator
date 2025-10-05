@@ -1,9 +1,4 @@
-/* Digital Clock + To-Do List */
-
-/* Digital Clock + To-Do List with Real-Time Features */
-
-/* Digital Clock + To-Do List + Real-Time Weather */
-
+alert("✅ JavaScript file loaded successfully!");
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
 const ampmEl = document.getElementById('ampm');
@@ -109,4 +104,5 @@ clearCompletedBtn.onclick=()=>{tasks=tasks.filter(t=>!t.completed);saveTasks();r
 addBtn.onclick=()=>addTask(input.value);
 input.onkeydown=e=>{if(e.key==='Enter')addTask(input.value);};
 loadTasks();render();
+
 
